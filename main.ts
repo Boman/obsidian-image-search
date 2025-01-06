@@ -9,8 +9,8 @@ export default class ImageSearchPlugin extends Plugin {
 		await this.loadSettings();
 
 		this.addCommand({
-			id: 'insert-image',
-			name: 'Insert image',
+			id: 'insert-image-dev',
+			name: 'Insert image dev',
 			editorCallback: (editor: Editor) => {
 				new QueryModal(this.app, this.settings, this.onSubmit(editor)).open();
 			}
